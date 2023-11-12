@@ -1,0 +1,39 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": "airbnb-base",
+  "overrides": [],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "accessor-pairs": "off",
+    "no-console": "off",
+    "no-underscore-dangle": "off",
+    "linebreak-style": "off",
+    "implicit-arrow-linebreak": "off",
+    "no-plusplus": "off",
+    "no-restricted-syntax": "off",
+    "comma-dangle": "off",
+    "no-await-in-loop": "off",
+    "quotes": "off",
+    "prefer-regex-literals": "off",
+    "indent": "off",
+    "operator-linebreak": "off",
+    "no-unused-vars": "off",
+    "import/prefer-default-export": "off",
+    "no-new": "off",
+    "eol-last": "off",
+    "class-methods-use-this": "off",
+    "no-shadow": "off",
+    "consistent-return": "off",
+    "no-prototype-builtins": "off",
+    "no-undef": "off",
+    "no-return-assign": "off",
+    "eqeqeq": "off"
+  }
+}
