@@ -24,26 +24,20 @@ body {
   display: flex;
   flex-direction: column;
 }
-/* 
-.skip-link {
-  margin-top: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
 .skip-link {
   position: absolute;
-  top: -40px;
-  left: 0;
-  padding: 8px;
-  background-color: #bf1722;
-  color: white;
-  z-index: 100;
+  top: -60px;
+  left: 200px;
+  background-color: var(--color-secondary);
+  color: var(--color-ccc);
+  padding: 5px;
+  text-decoration: none;
+  z-index: 1000;
+  border-radius: 5px;
 }
 
 .skip-link:focus {
-  top: 0;
+  top: 25px;
 }
 
 /* TODO css hero */
@@ -85,27 +79,6 @@ body {
   font-weight: 800;
   padding: 0 32px;
   text-align: center;
-}
-.btn {
-  margin: auto;
-  padding: 1em 1em;
-  font-weight: 700;
-  color: var(--color-quaternary-alt);
-  text-align: center;
-  border-radius: 4px;
-  vertical-align: middle;
-  background-color: var(--color-secondary);
-  border: 1px solid transparent;
-  font-size: large;
-  cursor: pointer;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-
-}
-
-.btn:hover {
-  background-color: var(--color-ccc);
-  color: var(--color-quinary);
 }
 
 .hero__title {
@@ -186,7 +159,9 @@ body {
   width: 100%;
   border: 2px solid transparent;
   transition: border 0.3s ease-in-out;
-  min-height: 44px;
+  padding: 10px;
+  font-size: 1.2em;
+  font-weight: 600;
 }
 
 .app-bar .app-bar__navigation ul li a:hover {

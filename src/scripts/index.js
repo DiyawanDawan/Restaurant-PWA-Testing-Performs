@@ -22,6 +22,13 @@ window.addEventListener('hashchange', () => {
 
 window.addEventListener('load', () => {
   app.renderPage();
+  const mainContent = document.querySelector('#mainContent');
+  const skipLink = document.querySelector('.skip-link');
+  skipLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    mainContent.scrollIntoView({ behavior: 'smooth' });
+    skipLink.blur();
+  });
   swRegister();
   WebSocketInitiator.init(CONFIG.WEB_SOCKET_SERVER);
 });
